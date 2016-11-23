@@ -18,14 +18,14 @@
   "scripts": {
     "postinstall": "bower install",
 
-    "prestart": "npm install",
+    "prestart": "cnpm install",
     "start": "http-server ./app -a localhost -p 8000 -c-1",
 
-    "pretest": "npm install",
+    "pretest": "cnpm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js --single-run",
 
-    "preupdate-webdriver": "npm install",
+    "preupdate-webdriver": "cnpm install",
     "update-webdriver": "webdriver-manager update",
 
     "preprotractor": "npm run update-webdriver",
