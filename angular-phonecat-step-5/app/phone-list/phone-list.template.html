@@ -4,11 +4,11 @@
       <!--Sidebar content-->
 
       Search: <input ng-model="query" />
-
+	  <p>query:{{query}}</p>
     </div>
     <div class="col-md-10">
       <!--Body content-->
-
+	  
       <ul class="phones">
         <li ng-repeat="phone in $ctrl.phones | filter:query">
           <span>{{phone.name}}</span>
