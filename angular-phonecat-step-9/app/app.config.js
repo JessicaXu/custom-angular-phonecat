@@ -2,7 +2,7 @@
 
 angular.
   module('phonecatApp').
-  config(['$locationProvider' ,'$routeProvider',
+  config(['$locationProvider' ,'$routeProvider',   // 这种写法就是定义依赖注入
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('!');
 

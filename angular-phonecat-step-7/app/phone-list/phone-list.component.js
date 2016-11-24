@@ -10,6 +10,7 @@ angular.
       self.orderProp = 'age';
 
       $http.get('phones/phones.json').then(function(response) {
+		console.log(response);
         self.phones = response.data;
       });
     }
