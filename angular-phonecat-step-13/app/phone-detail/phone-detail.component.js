@@ -10,6 +10,7 @@ angular.
         var self = this;
         self.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
           self.setImage(phone.images[0]);
+		  console.log("phone", self.phone);
         });
 
         self.setImage = function setImage(imageUrl) {
